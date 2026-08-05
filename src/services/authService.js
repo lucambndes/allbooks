@@ -2,6 +2,8 @@ const jwt = require('jsonwebtoken');
 
 const SECRET_KEY = '123456789';
 
+/* Comentário adicionado */
+
 function createToken(payload, expiresIn = '12h') {
     return jwt.sign(payload, SECRET_KEY, { expiresIn });
 }
